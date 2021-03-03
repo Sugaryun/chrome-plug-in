@@ -1,0 +1,26 @@
+{
+   "decode": {
+      "message": "识别二维码"
+   },
+   "desc": {
+      "message": "打开手机扫码,在手机上访问当前页面"
+   },
+   "description": {
+      "message": "将输入的网址或文案生成二维码,二维码可下载"
+   },
+   "div_title": {
+      "message": "生成/识别二维码"
+   },
+   "download": {
+      "message": "下载二维码"
+   },
+   "encode": {
+      "message": "生成二维码"
+   },
+   "more": {
+      "message": "更多实用工具,点击这里获取"
+   },
+   "title": {
+      "message": "二维码助手"
+   }
+}
