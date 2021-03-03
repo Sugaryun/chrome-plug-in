@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "jquery-3.3.1.min.js", "tool.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/icon.png",
+      "default_popup": "popup.html",
+      "default_title": "帮您淘优惠卷"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery-3.3.1.min.js", "content.js", "qrcode.min.js" ],
+      "matches": [ "*://item.taobao.com/item.htm*", "*://detail.tmall.com/item.htm*", "*://chaoshi.detail.tmall.com/item.htm*", "*://detail.tmall.hk/item.htm*", "*://detail.tmall.hk/hk/item.htm*", "*://detail.liangxinyao.com/item.htm*", "*://detail.yao.95095.com/item.htm*", "*://s.taobao.com/*", "*://list.tmall.com/*", "*://item.jd.com/*", "*://search.jd.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "default_locale": "zh_CN",
+   "description": "在淘宝天猫购物时，在商品详情页自动查询可领取的内部隐藏优惠券，领券后下单立减，可以更省钱",
+   "icons": {
+      "128": "images/icon.png",
+      "16": "images/icon.png",
+      "48": "images/icon.png"
+   },
+   "manifest_version": 2,
+   "name": "帮您淘优惠卷",
+   "permissions": [ "tabs", "clipboardRead", "clipboardWrite", "storage", "unlimitedStorage", "webNavigation", "webRequest", "webRequestBlocking", "cookies", "contextMenus", "idle", "\u003Call_urls>" ],
+   "version": "0.0.1",
+   "web_accessible_resources": [ "content.css", "images/coupon_mini.png", "images/phone.png", "images/quan.png", "images/search.png", "images/pdd.png", "images/close.png", "images/wechat.png", "images/list_quan.png" ]
+}
